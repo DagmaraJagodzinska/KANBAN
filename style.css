@@ -1,0 +1,111 @@
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+	font-family: 'Titillium Web', sans-serif; 
+	background-color: #F4F4F4;
+}
+.container {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.board h1 {
+	color: #4E4F51; 
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	height: 1.5em;
+	color: #414553;
+}
+.create-column {  /*button*/
+	border: none;
+	background-color: #414553;
+	height: 2em;
+	width: 10em;
+	font-size: 1em;
+	color: #fff;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+}
+.create-column:hover {
+	cursor: pointer;
+}
+.column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.column-container div:nth-child(1) {
+	background-color: #409BAF; 
+}
+.column-container div:nth-child(2) {
+	background-color: #7A7CA3; 
+}
+.column-container div:nth-child(3) {
+	background-color:  #7491C3; 
+}
+.column {
+	min-width: 400px;
+	min-height: 50vh;
+	background-color: #3DB8C3;
+	margin-left: 2em;
+	position: relative;
+}
+.column .column-title {
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.1em;
+}
+.column-card-list {
+	list-style-type: none;
+}
+.column .btn-delete {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 22px;
+	height: 22px;
+	background-color: #D4DBE5;
+	border: none;
+	color: #4E4F51;
+	padding-right: 2px;
+}
+.column .add-card {  /*button*/
+	background-color: #D4DBE5;
+	color: #4E4F51;
+	border: none;
+	width: 7em;
+	height: 2em;
+	font-size: 0.8em;
+	position: absolute;
+	top: 4em;
+	left: 0;
+}
+.ui-sortable {
+	padding: 0;
+}
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	background-color: #324551;
+	min-height: 4em;
+	padding: 0;
+	margin-top: 0.5em;
+}
+.card p {
+	color: #fff;
+}
+.card .btn-delete {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 22px;
+	height: 22px;
+}

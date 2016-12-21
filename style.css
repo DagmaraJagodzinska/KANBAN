@@ -109,3 +109,6 @@ body {
 	width: 22px;
 	height: 22px;
 }
+.column-card-list {
+    min-height: 100px;
+}
